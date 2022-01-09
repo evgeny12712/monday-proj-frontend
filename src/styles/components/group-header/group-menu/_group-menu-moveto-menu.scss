@@ -1,0 +1,20 @@
+.moveto-menu {
+  position: absolute;
+  top: 100%;
+  right: 5px;
+  transform: translateX(50%);
+  z-index: 999;
+  background-color: rgb(243, 242, 242);
+  width: 170px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  & ul {
+    list-style: none;
+    width: 100%;
+    & li {
+      text-align: center;
+      border-block-end: 1px solid rgb(240, 239, 239);
+    }
+  }
+}

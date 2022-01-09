@@ -1,0 +1,26 @@
+.search-tasks-wrapper {
+  margin-inline-end: 6px;
+  line-height: 33px;
+  & .search-icon-wrapper {
+    padding-block-end: 3px;
+    margin-inline-start: 7px;
+    cursor: pointer;
+  }
+  & span {
+    width: 60px;
+    padding-inline-start: 5px;
+    font-size: rem(15px);
+    cursor: pointer;
+  }
+  & .search-input {
+    outline: none;
+    padding: 1px 0 1px 5px;
+    font-size: rem(15px);
+    width: 185px;
+    border: 0;
+  }
+}
+
+.open-input {
+  border: 1px solid var(--primary-clr);
+}

@@ -1,0 +1,71 @@
+.dashboard {
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-left: 30px;
+
+  .data-container {
+    width: 100%;
+    justify-content: space-evenly;
+
+    .box {
+      width: 150px;
+      height: 75px;
+      box-shadow: 0 4px 17px 6px rgb(0 0 0 / 10%);
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+
+      .icon {
+        padding: 5px;
+        margin-right: 10px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        .icon-svg {
+          width: 32px;
+          height: 32px;
+          color: #fff;
+        }
+      }
+      .header-chart {
+        .data-nums {
+          font-size: 24px;
+          margin: 0 0 0;
+        }
+      }
+    }
+
+    .group-data {
+      background: linear-gradient(145deg, #50a4fd, #4353ff);
+    }
+
+    .person-data {
+      background: linear-gradient(145deg, #fba5f3, #a25ddc);
+    }
+
+    .tasks-data {
+      background: linear-gradient(145deg, #80e3ba, #258750);
+    }
+
+    .update-data {
+      background: linear-gradient(145deg, #fed59e, #fdab3d);
+    }
+  }
+
+  .charts-container {
+    height: 70vh;
+    width: 85%;
+    .chart-box {
+      height: 85%;
+      width: 85%;
+      max-width: 85%;
+      .chart {
+        width: 50%;
+        margin: 0 auto;
+        height: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+.first-level-control-content {
+  min-height: 100vh;
+  background-color: var(--dark-background-clr);
+  border-right: 1px solid var(--primary-border-clr-light);
+  opacity: 1;
+  transition: opacity 100ms ease;
+  transition: width 0.1s cubic-bezier(0, 0, 0.35, 1);
+  position: fixed;
+  left: 66px;
+  width: 33px;
+  // display: none;
+  // background-color: red;
+  .btn-open-control {
+    position: absolute;
+    background-color: var(--primary-background-clr);
+    right: 0;
+    top: 20px;
+    justify-content: center;
+    transform: translateX(50%);
+    z-index: 2;
+    height: 27px;
+    width: 27px;
+    padding: 3px 9px;
+    border: 1px solid;
+    border-color: var(--layout-border-clr);
+    color: var(--primary-txt-clr);
+    display: flex;
+    align-items: center;
+    &:hover {
+      background-color: var(--primary-clr);
+      color: var(--primary-background-clr);
+    }
+  }
+
+  .control-content-container {
+    width: 255px;
+    height: 100vh;
+    opacity: 1;
+    position: fixed;
+    .spacer {
+      border-bottom: 1px solid;
+      border-color: var(--layout-border-clr);
+      margin: 0 20px;
+    }
+
+    .control-content-separator {
+      margin: 0 20px;
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-top-color: var(--primary-border-clr-light);
+    }
+
+    header.control-content-header {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin: 12px 16px 18px 16px;
+      height: 68px;
+      color: var(--primary-txt-clr);
+      .dropdown-navigation-header {
+        width: 100%;
+        span {
+          display: inline-block;
+        }
+      }
+      span {
+        color: var(--placeholder-on-secondary-clr);
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .btn-icon {
+        width: 24px;
+      }
+      .btn-workspace-dropdown-container {
+        padding: 6px;
+        border-radius: 4px;
+        margin-right: 4px;
+        width: 100%;
+        border: 1px solid #676879;
+        h2 {
+          color: var(--primary-txt-clr);
+          font-size: 15px;
+          font-weight: 500;
+        }
+        .btn-icon {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+    .control-btns {
+      padding: 0 16px 16px 14px;
+      z-index: 1;
+      box-shadow: 0px 12px 13px -7px var(--dark-background-clr);
+      & > * {
+        justify-content: start;
+        padding-left: 6px;
+        width: 100%;
+        font-size: 13px;
+        height: 32px;
+      }
+      .btn {
+        background-color: transparent;
+        font-size: 14px;
+        color: var(--primary-txt-clr);
+        border-radius: 4px;
+        gap: 8px;
+        & > * {
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+        &:hover {
+          background-color: var(--primary-background-hover-clr);
+        }
+      }
+      .hero-icon {
+        width: 19px;
+        height: 19px;
+      }
+    }
+
+    & .home-control-component {
+      & .boards-list {
+        width: auto;
+
+        // overflow: hidden;
+        // position: relative;
+        & .boards-preview-title {
+          height: 34px;
+          padding-inline-start: 20px;
+        }
+        & ul {
+          list-style: none;
+          & .board-preview-wrapper {
+            & .board-preview {
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              border-radius: 4px;
+              &:hover {
+                background-color: var(--primary-background-hover-clr);
+              }
+              & .board-preview-dropdown-icon-wrapper {
+                position: absolute;
+                right: 5px;
+                & ion-icon {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-mobile-layout {
+  .control-content-container {
+    display: none;
+  }
+  .first-level-control-content {
+    display: none;
+    background-color: transparent;
+    border: transparent;
+  }
+  .btn-open-control {
+    display: none;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,292 @@
+.task-update {
+  overflow-y: auto;
+}
+.slide-panel-updates {
+  position: fixed;
+  background-color: var(--primary-background-clr);
+  padding: 10px;
+  width: 570px;
+  height: 100%;
+  z-index: 3001;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  min-width: 300px;
+  box-shadow: 0px 0px 10px 0px var(--main-nav-background-clr);
+  color: var(--primary-txt-clr);
+  transform: none;
+  cursor: default;
+  .btn-close-panel {
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    margin-inline-start: -6px;
+    color: #777;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    &:hover {
+      background-color: var(--primary-background-hover-clr);
+    }
+  }
+
+  .new-post-placeholder {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    border: 1px solid var(--clr-royal);
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: var(--clr-mud_black);
+    cursor: text;
+    width: 100%;
+    justify-content: start;
+    text-align: left;
+    transition: all 0.15s ease;
+    font-size: 16px;
+    font-weight: 300;
+    &:hover {
+      background-color: var(--primary-background-hover-clr);
+    }
+  }
+
+  .post-no-found {
+    margin-top: 30px;
+    font-size: rem(25px);
+    color: #676879;
+    text-align: center;
+    gap: 20px;
+    & img {
+      width: 300px;
+    }
+  }
+
+  .btn-update-panel {
+    margin-top: 7px;
+    font-size: 14px;
+    background-color: var(--primary-clr);
+    color: var(--clr-snow_white);
+    padding: 4px 8px;
+    line-height: 24px;
+    border-radius: 4px;
+    width: 80px;
+    align-self: flex-end;
+  }
+
+  .post-top {
+    margin-bottom: 67px;
+    margin: 0 20px;
+    textarea {
+      outline: none;
+      display: inline-block;
+      border: 1px solid var(--clr-royal);
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin-bottom: 5px;
+      max-height: 400px;
+    }
+  }
+}
+
+.header-task-update {
+  // width: 100%;
+  text-align: left;
+  font-size: 24px;
+  margin: 20px 20px 6px 24px;
+  .task-title-update {
+    & div {
+      border: 1px solid transparent;
+      font-size: 24px;
+      padding: 0 4px;
+      border-radius: 4px;
+      font-weight: 500;
+      &:hover {
+        cursor: text;
+        border: 1px solid #e6e9ef;
+      }
+    }
+    & input {
+      width: 100%;
+      border: 1px solid #80abff;
+      font-size: 24px;
+      padding: 0 4px;
+      border-radius: 4px;
+      font-weight: 500;
+      &:hover {
+        border-color: black;
+      }
+    }
+  }
+  .monday-board-subsets-tabs {
+    margin-right: 0;
+  }
+
+  .add-board-subset-picker-wrapper {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+}
+
+.activity-log-container {
+  .activity-log-navigation {
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 16px 16px 16px 24px;
+    border-radius: 3px;
+    margin-top: 16px;
+    background-color: var(--dark-background-clr);
+    // background-color: var(--pulse-background-color);
+
+    .activity-log-navigation-buttons {
+      display: flex;
+      flex-direction: row;
+
+      .activity-log-btn {
+        color: #0085ff;
+        padding: 4px 8px;
+      }
+    }
+  }
+
+  .board-log-filter {
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    z-index: 2;
+    justify-content: flex-start;
+    margin-top: 24px;
+    flex: none;
+
+    .log-drop-down-filter {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+
+      button {
+        width: 91.1094px;
+        height: 32px;
+      }
+    }
+
+    .log-person-filter {
+      display: flex;
+      flex: 0 1 auto;
+      align-items: center;
+      position: relative;
+      margin-left: 10px;
+
+      .log-person-item {
+        height: 32px;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        font-size: 19px;
+        align-items: center;
+        justify-content: center;
+
+        .item-title {
+          max-width: 140px;
+          opacity: 1;
+          padding-left: 6px;
+          white-space: nowrap;
+          padding-right: 12px;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .activity-box {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 39px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 0 8px 0 26px;
+    border-top: 1px solid #c5c7d0;
+
+    .time {
+      flex: 0 0 56px;
+      color: var(--primary-txt-clr);
+    }
+
+    .activity-and-user {
+      flex: 1 0 0;
+      display: flex;
+      position: relative;
+      align-items: center;
+      height: 100%;
+
+      .user {
+        flex: 0 1 auto;
+        z-index: 1;
+        font-size: 30px;
+      }
+
+      .task-title {
+        cursor: default;
+        flex: 1 1 auto;
+        padding-left: 36px;
+        padding-right: 0;
+        position: absolute;
+        border: none;
+        width: 100%;
+        line-height: 39px;
+        color: var(--primary-txt-clr);
+        font-size: 14px;
+      }
+    }
+
+    .additional-values {
+      display: flex;
+      flex: 1.5 0 0;
+      height: 100%;
+      align-items: center;
+
+      .separator {
+        flex: 0 0 16px;
+        height: 100%;
+      }
+
+      .change-action {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        flex: 1.2 0 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .action {
+          cursor: default;
+          height: 100%;
+          border: none;
+          padding-left: 20px;
+          position: absolute;
+          width: 100%;
+          line-height: 39px;
+          color: var(--primary-txt-clr);
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.tab-btn {
+  background-color: transparent;
+}

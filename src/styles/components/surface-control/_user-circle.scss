@@ -1,0 +1,43 @@
+.surface-control-users {
+  height: 100%;
+  width: 100%;
+  border: 2px solid var(--primary-background-clr);
+  position: relative;
+  display: flex;
+  border-radius: 50%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-block-start: auto;
+  color: white;
+  & .surface-control-user-menu {
+    height: fit-content;
+    position: absolute;
+    left: 150%;
+    bottom: 20%;
+    box-shadow: 0 4px 17px 6px rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: var(--primary-background-clr);
+    color: var(--primary-txt-clr);
+    & .surface-control-user-menu-item {
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      padding: 6px 12px;
+      cursor: pointer;
+      color: var(--primary-txt-clr);
+      font-size: rem(14px);
+      white-space: nowrap;
+      &:hover {
+        background-color: #e6e9ef3b;
+      }
+      & .menu-icon-wrapper {
+        margin-inline-end: 8px;
+        display: flex;
+      }
+    }
+  }
+}

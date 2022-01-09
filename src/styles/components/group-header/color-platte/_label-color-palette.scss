@@ -1,0 +1,35 @@
+$labels-clrs: #ff158a, #bb3354, #7f5347, #ffcb00, #9cd326, #037f4c, #579bfc, #66ccff, #784bd1,
+	#808080, #333, #ff7575, #faa1f1, #ffadad, #7e3b8a, #9aadbd, #68a1bd, #225091, #4eccc6, #5559df,
+	#401694, #563e3e, #bda8f9, #2b76e5, #a9bee8, #d974b0, #9d99b9, #ad967a, #a1e3f6, #175a63, #bd816e;
+
+.label-color-palette-container {
+	height: 100%;
+	min-height: auto;
+	background-color: var(--dark-background-clr);
+
+	.label-color-palette-btns {
+		height: 100%;
+		height: auto;
+		overflow: overlay;
+		// position: absolute;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+		align-items: flex-start;
+		width: 100%;
+		padding: 4px;
+		// transform: scaleY(0);
+		transition: transform 0.15s ease;
+		z-index: 1;
+
+		.btn {
+			margin: 4px;
+			&:hover {
+				transform: scale(1.2);
+				box-shadow: 0px 1px 8px -2px #000;
+			}
+		}
+	}
+}

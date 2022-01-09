@@ -1,0 +1,50 @@
+.board-header-subset-toolbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	& .monday-board-subset-item {
+		position: relative;
+		padding-bottom: 4px;
+		.btn-icon {
+			color: var(--primary-txt-clr);
+			max-width: 180px;
+			padding: 7px 16px;
+			// border-bottom: 2px solid transparent;
+			border-radius: 4px;
+			text-align: center;
+			line-height: 24px;
+			font-size: 16px;
+			cursor: pointer;
+			gap: 8px;
+
+			&:hover {
+				background-color: var(--primary-background-hover-clr);
+			}
+		}
+		& ion-icon {
+			font-size: 16px;
+		}
+		.board-subset-item__active-strip {
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	& .main-table-icon {
+		font-size: 20px;
+		position: relative;
+		color: #676879;
+		top: 3px;
+		padding-inline-end: 4px;
+	}
+	& .add-new-item-icon {
+		padding-inline-end: 8px;
+	}
+	& span {
+		background-color: transparent;
+		font-size: rem(14px);
+		border: none;
+		outline: none;
+		white-space: nowrap;
+	}
+}

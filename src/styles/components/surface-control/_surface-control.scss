@@ -1,0 +1,65 @@
+.surface-control {
+  background-color: var(--main-nav-background-clr);
+  color: var(--primary-background-clr);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 66px;
+  position: fixed;
+  ion-icon {
+    font-size: 20px;
+  }
+  a,
+  .btn {
+    height: 36px;
+    width: 36px;
+    // margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    &.active-link {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+  .btn-icon > * {
+    width: 23px;
+    height: 23px;
+  }
+  .btn-icon > *,
+  a > * {
+    color: var(--clr-snow_white);
+  }
+  .user-circle-wrapper {
+    width: 44px;
+    height: 44px;
+    margin-block-start: auto;
+    margin-block-end: 16px;
+  }
+
+  .monday-logo-navbar {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+  }
+  @include for-mobile-layout {
+    width: 100%;
+    flex-direction: row;
+    padding: 5px 20px;
+    // margin-block-start: 0;
+    position: fixed;
+    z-index: 1;
+    .user-circle-wrapper {
+      margin-block-end: 0;
+    }
+    .monday-logo-navbar {
+      margin-top: 0;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}

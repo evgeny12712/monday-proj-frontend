@@ -1,0 +1,76 @@
+// SETUP
+@import 'setup/typography';
+@import 'setup/variables';
+@import 'setup/mixins';
+@import 'setup/functions';
+// BASICS
+@import 'basics/helpers';
+@import 'basics/base';
+@import 'basics/layout';
+
+// COMPONENTS
+@import 'components/main-header/main-header';
+@import 'components/modals/confirm-modal';
+@import 'components/modals/user-msg';
+
+//surface-control
+@import 'components/surface-control/surface-control';
+@import 'components/surface-control/board-preview-menu';
+@import 'components/surface-control/user-circle';
+
+//task-list
+@import 'components/task-list/task-list';
+@import 'components/task-list/task-update';
+@import 'components/task-list/task-preview';
+@import 'components/task-list/add-task';
+@import 'components/task-list/task-menu';
+@import 'components/task-list/selected-task';
+
+@import 'components/control-content/control-content';
+@import 'components/control-content/control-content-board-list';
+@import 'components/board-header/board-header';
+@import 'components/board-header/board-header-main';
+@import 'components/board-header/board-header-view-bar';
+@import 'components/board-header/board-header-subset-toolbar';
+
+// panels
+@import 'components/modals/slide-panel';
+
+@import 'components/panels/updates.scss';
+
+// task-cmps
+@import 'components/task-cmps/member-picker';
+@import 'components/task-cmps/status-picker';
+@import 'components/task-cmps/tag-picker';
+@import 'components/task-cmps/date-picker';
+@import 'components/task-cmps/timeline-picker';
+@import 'components/task-cmps/date-picker-table';
+@import 'components/task-cmps/group-task-summary';
+
+//group-header
+@import 'components/group-header/group-header';
+@import 'components/group-header/group-menu/group-menu';
+@import 'components/group-header/group-menu/group-menu-moveto-menu';
+
+//group-list
+@import 'components/group-list/group-list';
+
+// Color palette
+@import 'components/group-header/color-platte/label-popup';
+@import 'components/group-header/color-platte/custom-tool-tip';
+@import 'components/group-header/color-platte/group-color-palette';
+@import 'components/group-header/color-platte/label-color-palette';
+@import 'components/group-header/color-platte/tag-summary';
+
+// Header filter
+@import 'components/board-header/board-header-add-task.scss';
+@import 'components/board-header/board-header-filter-search.scss';
+@import 'components/board-header/board-header-filter-person.scss';
+@import 'components/board-header/board-header-filter-filter.scss';
+@import 'components/board-header/board-header-filter-sort.scss';
+@import 'components/board-header/board-header-filter-pin.scss';
+
+//pages
+@import 'pages/signup';
+@import 'pages/workspace';
+@import 'pages/home-page';

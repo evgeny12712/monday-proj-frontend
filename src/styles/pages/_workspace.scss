@@ -1,0 +1,287 @@
+.workspace {
+  display: grid;
+  flex-grow: 1;
+  background-color: var(--primary-background-clr);
+  //DARK-MODE-STUFF
+  &.dark-app-theme {
+    // 	// DARK
+    --primary-clr: var(--clr-basic_blue);
+    --primary-on-secondary-clr: var(--clr-basic_blue);
+    --primary-hover-clr: #0060b9;
+    --primary-hover-on-secondary-clr: #0060b9;
+    --primary-selected-clr: #133774;
+    --primary-selected-clr-rgb: 19, 55, 116;
+    --primary-selected-on-secondary-clr: #133774;
+    --primary-txt-clr: #d5d8df;
+    --primary-txt-on-secondary-clr: #d5d8df;
+    --primary-background-clr: #181b34;
+    --primary-background-clr-rgb: 24, 27, 52;
+    --primary-background-hover-clr: #4b4e69;
+    --primary-background-hover-on-secondary-clr: #4b4e69;
+    --grey-background-clr: #181b34;
+    --txt-clr-on-inverted: var(--clr-mud_black);
+    --modal-background-clr: #181b34;
+    --ui-border-clr: #797e93;
+    --ui-border-on-secondary-clr: #797e93;
+    --layout-border-clr: #4b4e69;
+    --layout-border-on-secondary-clr: #4b4e69;
+    --placeholder-clr: var(--clr-wolf_gray);
+    --placeholder-clr-with-opacity: var(--clr-wolf_gray-with-opacity);
+    --placeholder-on-secondary-clr: var(--clr-wolf_gray);
+    --icon-clr: var(--clr-wolf_gray);
+    --icon-on-secondary-clr: var(--clr-wolf_gray);
+    --disabled-background-clr: #4b4e69;
+    --disabled-background-on-secondary-clr: #4b4e69;
+    --disabled-txt-clr: rgba(197, 199, 208, 0.75);
+    --disabled-txt-on-secondary-clr: rgba(197, 199, 208, 0.75);
+    --dark-background-clr: #393b53;
+    --dark-background-on-secondary-clr: #4b4e69;
+    --secondary-background-clr: #30324e;
+    --secondary-background-clr-rgb: 48, 50, 78;
+    --dialog-background-clr: #30324e;
+    --secondary-txt-clr: var(--clr-jaco_gray);
+    --secondary-txt-on-secondary-clr: var(--clr-jaco_gray);
+    --clr-grass_green: #359970;
+    --clr-grass_green-hover: #116846;
+    --clr-grass_green-selected: #0f4f43;
+    --clr-done-green: #33d391;
+    --clr-done-green-hover: #0f9b63;
+    --clr-done-green-selected: #0e7358;
+    --clr-bright-green: #b0dc51;
+    --clr-bright-green-hover: #7ca32b;
+    --clr-bright-green-selected: #5c7930;
+    --clr-saladish: #d5c567;
+    --clr-saladish-hover: #9d8f3e;
+    --clr-saladish-selected: #736a3e;
+    --clr-egg_yolk: #ffd533;
+    --clr-egg_yolk-hover: #c29e11;
+  }
+  &.light-app-theme,
+  &.default-app-theme {
+    --react-modal-background: rgba(41, 47, 76, 0.7);
+    --application-background-clr: var(--clr-snow_white);
+    --application-border-clr: #e6e9ef;
+    --txt-clr-on-card: #323338;
+    --main-nav-background-clr: #292f4c;
+    --pulse-background-clr: #f5f6f8;
+    --pulse-background-clr-rgb: 245, 246, 248;
+    --pulse-background-clr-opacity: #f5f6f880;
+    --pulse-txt-clr: #666;
+    --pulse-hover-background-clr: #e6e9ef;
+    --pulse-selected-background-clr: #e5f4ff;
+    --pulse-floating-background-clr: 253, 253, 250;
+    --pulse-highlight-background-clr: #cce9ff;
+    --surfce-clr: #292f4c;
+    --surface-border-clr: #4b4e69;
+    --card-background-clr: var(--primary-background-clr);
+    --card-hover-background-clr: white;
+    --card-selected-background-clr: #d9f0ff;
+    --card-selected-txt-clr: #0073ea;
+    --automations-hover-background-clr: #f5f6f8;
+    --automations-label-background-clr: #f5f6f8;
+    --automations-border-clr: #e6e9ef;
+    --automations-account-usage-background-clr: white;
+    --automations-account-usage-dropdown-border-clr: #d9d9d9;
+    --automations-account-usage-progressbar-background-clr: #e6e9ef;
+    --apps-svg-icon-invert: invert(0);
+    --apps-code-clr: #5559df;
+    --apps-feature-preview-clr: #e5f4ff;
+    --apps-tabs-border-clr: #1c1f3b;
+    --card-border-clr: #e6e9ef;
+    --avatar-border-clr: var(--clr-snow_white);
+    --modal-bottom-clr: #f7f7f7;
+    --modal-free-indication-clr: var(--primary-selected-clr);
+    --notification-unread-highlight-clr: #d2eaff;
+    --apps-marketplace-highlight-clr: #f5f6f8;
+    --redactor-context-background-clr: #323338;
+    --redactor-context-link-clr: #fff;
+    --ajax-spinner-gif-path: url(/images/ajax_spinner.gif);
+    --scrollbar-clr: var(--clr-wolf_gray);
+    --monday-loader-gif-path: url(/images/loader/loader.gif);
+    --hint-background-clr: #ccf4e3;
+    --transparent-overlay: rgba(41, 47, 76, 0.5) !important;
+    --timeline-row-hover: rgba(210, 210, 210, 0.3);
+  }
+  &.light-app-theme {
+    --primary-clr: var(--clr-basic_blue);
+    --primary-on-secondary-clr: var(--clr-basic_blue);
+    --primary-hover-clr: var(--clr-dark_blue);
+    --primary-hover-on-secondary-clr: var(--clr-dark_blue);
+    --primary-selected-clr: var(--clr-highlight_blue);
+    --primary-selected-clr-rgb: var(--clr-highlight_blue-rgb);
+    --primary-selected-on-secondary-clr: var(--clr-highlight_blue);
+    --primary-txt-clr: var(--clr-mud_black);
+    --primary-txt-on-secondary-clr: var(--clr-mud_black);
+    --txt-clr-on-primary: var(--clr-snow_white);
+    --txt-clr-on-primary-with-opacity: var(--clr-snow_white-with-opacity);
+    --primary-background-clr: var(--clr-snow_white);
+    --primary-background-clr-rgb: 255, 255, 255;
+    --primary-background-hover-clr: var(--clr-ui_grey);
+    --primary-background-hover-on-secondary-clr: var(--clr-ui_grey);
+    --grey-background-clr: var(--clr-riverstone_gray);
+    --modal-background-clr: var(--clr-snow_white);
+    --inverted-clr-background: var(--clr-mud_black);
+    --txt-clr-on-inverted: var(--clr-snow_white);
+    --positive-clr: var(--clr-success);
+    --positive-clr-hover: var(--clr-success-hover);
+    --positive-clr-selected: var(--clr-success-highlight);
+    --negative-clr: var(--clr-error);
+    --negative-clr-hover: var(--clr-error-hover);
+    --negative-clr-selected: var(--clr-error-highlight);
+    --private-clr: var(--clr-private);
+    --shareable-clr: var(--clr-purple);
+    --ui-border-clr: var(--clr-wolf_gray);
+    --ui-border-on-secondary-clr: var(--clr-wolf_gray);
+    --layout-border-clr: var(--clr-ui_grey);
+    --layout-border-on-secondary-clr: var(--clr-ui_grey);
+    --placeholder-clr: var(--clr-asphalt);
+    --placeholder-clr-with-opacity: var(--clr-asphalt-with-opacity);
+    --placeholder-on-secondary-clr: var(--clr-asphalt);
+    --icon-clr: var(--clr-asphalt);
+    --icon-on-secondary-clr: var(--clr-asphalt);
+    --disabled-background-clr: var(--clr-ui_grey);
+    --disabled-background-on-secondary-clr: var(--clr-ui_grey);
+    --disabled-txt-clr: #676879;
+    --disabled-txt-on-secondary-clr: #676879;
+    --dark-background-clr: var(--clr-riverstone_gray);
+    --dark-background-on-secondary-clr: var(--clr-riverstone_gray);
+    --secondary-background-clr: var(--clr-snow_white);
+    --secondary-background-clr-rgb: 255, 255, 255;
+    --dialog-background-clr: var(--clr-snow_white);
+    --label-background-clr: var(--clr-highlight_blue);
+    --label-background-on-secondary-clr: var(--clr-highlight_blue);
+    --secondary-txt-clr: var(--clr-asphalt);
+    --secondary-txt-on-secondary-clr: var(--clr-asphalt);
+    --link-clr: var(--clr-link_clr);
+    --link-on-secondary-clr: var(--clr-link_clr);
+    --box-shadow-small: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    --box-shadow-medium: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    --box-shadow-large: 0px 15px 50px rgba(0, 0, 0, 0.3);
+    --box-shadow-mediun: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  &.dark-app-theme {
+    --react-modal-background: rgba(41, 47, 76, 0.7);
+    --application-background-clr: #1c1f3b;
+    --application-border-clr: #4b4e69;
+    --pulse-background-clr: #33354b;
+    --pulse-background-clr-rgb: 51, 53, 75;
+    --pulse-background-clr-opacity: #33354b80;
+    --pulse-txt-clr: var(--clr-wolf_gray);
+    --pulse-hover-background-clr: #3f4259;
+    --pulse-selected-background-clr: #4b4e69;
+    --pulse-floating-background-clr: 42, 45, 69;
+    --pulse-highlight-background-clr: #59627b;
+    --surfce-clr: #292f4c;
+    --surface-border-clr: #4b4e69;
+    --card-background-clr: var(--secondary-background-clr);
+    --card-hover-background-clr: #4b4e69;
+    --card-selected-background-clr: #5a5c74;
+    --card-selected-txt-clr: var(--clr-snow_white);
+    --card-border-clr: #5a5c74;
+    --automations-hover-background-clr: #525672;
+    --automations-label-background-clr: #525672;
+    --automations-border-clr: #5a5c74;
+    --automations-account-usage-background-clr: #1c1f3b;
+    --automations-account-usage-dropdown-border-clr: #9699a6;
+    --automations-account-usage-progressbar-background-clr: #4b4e69;
+    --apps-svg-icon-invert: invert(1);
+    --apps-code-clr: #fff;
+    --apps-feature-preview-clr: #292f4c;
+    --apps-tabs-border-clr: #393b52;
+    --txt-clr-on-card: var(--clr-snow_white);
+    --avatar-border-clr: var(--clr-snow_white);
+    --modal-bottom-clr: var(--surfce-clr);
+    --modal-free-indication-clr: var(--primary-selected-clr);
+    --notification-unread-highlight-clr: #59627b;
+    --apps-marketplace-highlight-clr: #292f4c;
+    --redactor-context-background-clr: #393b53;
+    --redactor-context-link-clr: #fff;
+    --ajax-spinner-gif-path: url(/images/ajax_spinner_dark.gif);
+    --scrollbar-clr: var(--clr-wolf_gray);
+    --monday-loader-gif-path: url(/images/loader/dark_loader.gif);
+    --hint-background-clr: #258750;
+    --transparent-overlay: rgba(41, 47, 76, 0.5) !important;
+    --inverted-clr-background: #fff;
+    --positive-clr: var(--clr-success);
+    --positive-clr-hover: var(--clr-success-hover);
+    --positive-clr-selected: #26503e;
+    --negative-clr: var(--clr-error);
+    --negative-clr-hover: var(--clr-error-hover);
+    --negative-clr-selected: #642830;
+    --private-clr: var(--clr-private);
+    --shareable-clr: #a358df;
+    --label-background-clr: #404b69;
+    --label-background-on-secondary-clr: #404b69;
+    --link-clr: #69a7ef;
+    --link-on-secondary-clr: #69a7ef;
+  }
+
+  @include for-narrow-wide-layout {
+    grid-template-columns: 66px auto;
+    grid-template-rows: 100vh;
+    .surface-control {
+      grid-column: 1;
+      flex-direction: column;
+      height: 100vh;
+    }
+  }
+
+  @include for-mobile-layout {
+    grid-template-columns: 100vw;
+    grid-template-rows: 66px auto;
+    .control-content-fake {
+      width: 66px;
+      height: 100%;
+      background-color: transparent;
+    }
+    .surface-control-fake {
+      width: 100%;
+      height: 54px;
+      background-color: red;
+    }
+  }
+
+  .workspace-content {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    &.control-open {
+      grid-template-columns: 255px 1fr;
+      .control-content-container {
+        opacity: 1;
+      }
+    }
+    .workspace-main {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    &.selected {
+      .left-indicator-inner {
+        width: 32px;
+        .left-indicator-checkbox {
+          opacity: 1;
+        }
+      }
+    }
+
+    & .loading-img {
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+.control-content-fake {
+  width: 33px;
+  height: 100vh;
+  background-color: red;
+}
+.surface-control-fake {
+  width: 66px;
+  height: 100vh;
+  background-color: red;
+}

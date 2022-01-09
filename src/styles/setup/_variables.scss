@@ -1,0 +1,60 @@
+// COLOR PALETTE
+// Text clrs
+$clr1: #ce2e6c;
+$clr3: #ffb5b5;
+$clr2: #504658;
+$clr4: #f0decb;
+$clr5: #fff;
+$lightest-txt-clr: #fff;
+$secondary-txt-clr: #676879;
+$primary-txt-clr: #323338;
+$primary-hover-clr: #0060b9;
+$primary-clr: #0073ea;
+
+$primary-selected-clr: #cce5ff;
+// Background clrs
+$dark-background-clr: #f5f6f8;
+$main-nav-background-clr: #292f4c;
+$primary-background-clr: #fff;
+// DARK MODE
+$primary-background-dark-mode-clr: #292f4c;
+$primary-background-light-dark-mode-clr: #181b34;
+$primary-txt-clr-dark-mode: hsl(222, 14%, 85%);
+////////////////////////////////////////////////////////////////
+$primary-background-hover-clr: #e6e9ef;
+$floating-background-clr: rgba(253, 253, 250, 0.95);
+// Border clr
+$primary-border-clr-light: #e6e9ef;
+// $space-ind-clr: #f5f6f8;
+
+// LAYOUT
+$layoutPadding: 20px;
+
+// LAYOUT BREAKPOINTS
+$break-narrow: 640px;
+$break-normal: 640px;
+$break-wide: 960px;
+
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-wide: $break-wide + $layoutPadding * 2;
+
+// PADDING
+$padding-def: 10px 20px;
+
+// WIDTH
+$main-nav-width: 66px;
+$control-content-width: 30px;
+// task list margin
+$edit-btn-container-width: 30px;
+
+// HEIGHT
+$height-home-page-header: 30px;
+
+// BORDER
+$primary-blue-border: 1px solid $primary-clr;
+$primary-black-border: 1px solid $primary-txt-clr;
+$primary-light-gray-border: 1px solid $primary-background-hover-clr;
+
+$labels-clrs: #ff158a, #bb3354, #7f5347, #ffcb00, #9cd326, #037f4c, #579bfc, #66ccff, #784bd1, #808080, #333, #ff7575, #faa1f1, #ffadad, #7e3b8a, #9aadbd, #68a1bd, #225091, #4eccc6, #5559df, #401694,
+  #563e3e, #bda8f9, #2b76e5, #a9bee8, #d974b0, #9d99b9, #ad967a, #a1e3f6, #175a63, #bd816e;

@@ -1,0 +1,44 @@
+.person-filter-wrapper {
+	margin-inline-end: 6px;
+	line-height: 33px;
+	text-align: center;
+	align-items: center;
+	& .person-icon-wrapper {
+		font-size: 20px;
+		margin-left: 9px;
+	}
+	& .person-span {
+		padding: 1px 0 1px 5px;
+		font-size: rem(14px);
+		width: 65px;
+	}
+	// .member-icon {
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	// height: 30px;
+	// 	width: 32px;
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// 	// width: 26px;
+	// 	// height: 26px;
+	// 	ion-icon {
+	// 		font-size: 16px;
+	// 		color: $primary-txt-clr;
+	// 	}
+	// 	.person-bullet-component.person-bullet-image {
+	// 		// z-index: 0;
+	// 		// border: 2px solid;
+	// 		// border-color: #f5f6f8;
+	// 		// border-color: var(--pulse-background-color);
+	// 	}
+	// 	.person-bullet-component {
+	// 		position: relative;
+	// 		display: flex;
+	// 		border-radius: 50%;
+	// 		width: 16px;
+	// 		height: 16px;
+	// 		flex-shrink: 0;
+	// 	}
+	// }
+}

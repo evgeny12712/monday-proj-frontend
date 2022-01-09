@@ -1,0 +1,56 @@
+// .task-menu-container {
+//   font-size: 14px;
+//   z-index: 1000;
+//   border-radius: 8px;
+//   box-shadow: 0 4px 17px 6px rgb(0 0 0 / 10%);
+//   background-color: var(--primary-background-clr);
+//   transition: all 50ms ease-in;
+//   transition-property: opacity, width;
+//   overflow: auto;
+//   min-width: 50px;
+//   order: 1;
+//   padding: 12px;
+//   max-height: 100%;
+// }
+
+.task-menu-container {
+  position: absolute;
+  top: 80%;
+  left: 100%;
+  font-size: 14px;
+  border-radius: 8px;
+  box-shadow: 0 4px 17px 6px rgb(0 0 0 / 10%);
+  padding: 12px;
+  z-index: 999;
+  background-color: var(--primary-background-clr);
+  .menu-item {
+    line-height: 24px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 4px 8px;
+    cursor: pointer;
+    color: var(--primary-txt-clr);
+    font-weight: 400;
+    font-size: rem(14px);
+    border-radius: 4px;
+    &:hover {
+      background-color: var(--primary-background-hover-clr);
+    }
+    & .menu-icon-wrapper {
+      display: flex;
+      & .menu-item-color-pick {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+      }
+    }
+    .group-moveto-dropdown-icon-wrapper {
+      display: flex;
+      position: relative;
+      & .ion-icon {
+        font-size: rem(12px);
+      }
+    }
+  }
+}

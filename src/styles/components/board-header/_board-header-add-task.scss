@@ -1,0 +1,54 @@
+.add-task-btn-component {
+  margin-right: 3px;
+  .btn-blue {
+    color: #fff;
+    border-radius: 4px 0 0 4px;
+  }
+  & .dropdown-button {
+    width: 28px;
+    height: 32px;
+    border-radius: 0 4px 4px 0;
+    border-left: 1px solid;
+    border-left-color: #0071d9;
+    background-color: var(--primary-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // color: var(--lightest-txt-clr);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 100ms ease-in;
+    position: relative;
+    &:hover {
+      background-color: var(--primary-hover-clr);
+    }
+    &.clicked {
+      background-color: var(--primary-hover-clr);
+    }
+  }
+  .header-add-dropdown {
+    background-color: var(--primary-background-clr);
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 220px;
+    font-size: rem(15px);
+    color: var(--primary-txt-clr);
+    border-radius: 8px;
+    box-shadow: 0 4px 17px 6px rgb(0 0 0 / 10%);
+    padding: 8px;
+    z-index: 999;
+    & .add-group-wrapper {
+      line-height: 24px;
+      padding: 4px 8px;
+      cursor: pointer;
+      color: var(--primary-txt-clr);
+      font-size: rem(14px);
+      border-radius: 4px;
+      &:hover {
+        background-color: whitesmoke;
+      }
+    }
+  }
+}

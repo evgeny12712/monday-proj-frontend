@@ -1,0 +1,23 @@
+.sort-filter-wrapper {
+	margin-inline-end: 6px;
+	font-size: rem(15px);
+	width: 70px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	& .sort-icon-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 17px;
+		width: 32px;
+	}
+	& .sort-span {
+		height: 100%;
+		padding-inline-end: 12px;
+		max-width: 140px;
+		font-size: rem(14px);
+	}
+}

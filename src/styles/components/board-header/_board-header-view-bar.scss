@@ -1,0 +1,17 @@
+.board-header-view-bar {
+  padding: 16px 0;
+  color: var(--primary-txt-clr);
+  & .filter-tasks-wrapper {
+    & * {
+      // background-color: red;
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+      border-radius: 4px;
+      line-height: 22.5px;
+      // &:hover {
+      // 	background-color: var(--primary-background-hover-clr);
+      // }
+    }
+  }
+}

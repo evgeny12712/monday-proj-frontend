@@ -1,0 +1,49 @@
+.task-list-container {
+  min-width: fit-content;
+  .task-list {
+    width: 100%;
+    height: 100%;
+    .task-row {
+      display: block;
+      height: 35px;
+      width: 100%;
+      background-color: var(--primary-background-clr);
+      cursor: pointer;
+      &:hover {
+        .status-picker-txt {
+          opacity: 0.8;
+        }
+      }
+      &:hover:not(.open) {
+        .name-cell:not(.selected),
+        .grid-cell-component-wrapper > .col-cell {
+          background-color: #eff0f3;
+          background-color: var(--primary-background-hover-clr);
+        }
+      }
+      &:hover .menu-edit-task-container {
+        opacity: 1;
+      }
+      .menu-edit-task-container {
+        opacity: 0;
+        width: 100%;
+        .btn {
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--primary-background-hover-clr);
+          width: 18px;
+          height: 18px;
+          font-size: 15px;
+          &.selected {
+            background-color: var(--primary-selected-color);
+          }
+        }
+        @include for-mobile-layout {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
