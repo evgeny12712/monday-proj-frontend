@@ -38,6 +38,9 @@
             border: 1px dashed var(--primary-txt-clr);
           }
         }
+        @include for-mobile-layout {
+          position: static;
+        }
       }
       &:hover {
         background-color: var(--dark-background-clr);
@@ -167,11 +170,17 @@
       }
     }
     & span {
-      // padding: 5px 10px;
       border: 1px solid transparent;
     }
     & span:hover {
       border: 1px dashed #d1d1d1;
+    }
+  }
+
+  @include for-mobile-layout {
+    & .group-name {
+      min-width: 180px;
+      margin-inline-start: 15px;
     }
   }
 }
@@ -203,6 +212,15 @@
     }
     &:hover {
       background-color: transparent !important;
+    }
+  }
+  @include for-mobile-layout {
+    .btn-menu-group-header {
+      width: 25px;
+      height: 25px;
+      & .svg-inline--fa {
+        font-size: 18px;
+      }
     }
   }
 }

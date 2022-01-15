@@ -40,4 +40,11 @@
       }
     }
   }
+
+  @include for-mobile-layout {
+    & .surface-control-user-menu {
+      left: -100%;
+      bottom: -200%;
+    }
+  }
 }

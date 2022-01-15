@@ -126,6 +126,8 @@
         outline: none;
       }
     }
+    @include for-mobile-layout {
+    }
   }
   .conversation-indicator-component {
     display: flex;
